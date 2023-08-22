@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import HomePage from './pages/HomePage/HomePage';
+import CreateAccountPage from './pages/CreateAccountPage/CreateAccountPage';
+import ArtistPage from './pages/ArtistPage/ArtistPage';
+import NFTPage from './pages/NFTPage/NFTPage';
+import MarketplacePage from './pages/MarketplacePage/MarketplacePage';
+import RankingsPage from './pages/RankingsPage/RankingsPage';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/create-account" element={<CreateAccountPage />} />
+				<Route path="/artist/:artistId" element={<ArtistPage />} />
+				<Route path="/nft/:nftId" element={<NFTPage />} />
+				<Route path="/marketplace" element={<MarketplacePage />} />
+				<Route path="/rankings" element={<RankingsPage />} />
+			</Routes>
+		</>
+	);
 }
 
-export default App
+export default App;
