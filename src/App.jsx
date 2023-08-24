@@ -6,10 +6,12 @@ import ArtistPage from './pages/ArtistPage/ArtistPage';
 import NFTPage from './pages/NFTPage/NFTPage';
 import MarketplacePage from './pages/MarketplacePage/MarketplacePage';
 import RankingsPage from './pages/RankingsPage/RankingsPage';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
 	return (
 		<>
+			<Navigation />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/create-account" element={<CreateAccountPage />} />
