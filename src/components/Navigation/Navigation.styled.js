@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from 'src/device';
+import { Link } from 'react-router-dom';
 
 export const NavigationWrapper = styled.div`
 	&& {
@@ -9,12 +9,13 @@ export const NavigationWrapper = styled.div`
 		width: 100%;
 
 		padding: 0 50px;
-		${media.md`
+		@media screen and (max-width: 991px) {
 			height: 54px;
-		`}
-		${media.sm`
+		}
+
+		@media screen and (max-width: 576px) {
 			padding: 0 30px;
-		`}
+		}
 	}
 `;
 
@@ -33,5 +34,23 @@ export const NavigationLinks = styled.div`
 	&& {
 		display: flex;
 		align-items: center;
+	}
+`;
+
+export const LogoWrapper = styled(Link)`
+	&& {
+		display: flex;
+		align-items: center;
+
+		color: var(--color-text);
+		text-decoration: none;
+	}
+`;
+
+export const LogoText = styled.div`
+	&& {
+		display: flex;
+		align-items: center;
+		margin-left: 12px;
 	}
 `;

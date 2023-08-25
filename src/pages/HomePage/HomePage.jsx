@@ -1,19 +1,23 @@
-import Container from 'src/components/Container/Container';
-import Section from 'src/components/Section/Section';
-import RocketIcon from 'src/components/Icons/RocketIcon/RocketIcon';
+import HeroSection from './HeroSection/HeroSection';
+import TrendingCollectionSection from './TrendingCollectionSection/TrendingCollectionSection';
+import TopRatedArtistsSection from './TopRatedArtistsSection/TopRatedArtistsSection';
+import BrowseCategoriesSection from './BrowseCategoriesSection/BrowseCategoriesSection';
+import DiscoverMoreNFTSection from './DiscoverMoreNFTSection/DiscoverMoreNFTSection';
+import NFTHighlightSection from './NFTHighlightSection/NFTHighlightSection';
+import HowItWorksSection from './HowItWorksSection/HowItWorksSection';
+import SubscribeSection from './SubscribeSection/SubscribeSection';
+
 const HomePage = () => {
 	return (
 		<>
-			<Container>
-				<Section
-					headingTitle="Trending Collection"
-					headingSubtitle="Checkout our weekly updated trending collection."
-					isButtonVisible={true}
-					headingButtonText="View Rankings"
-					headingButtonVariant="outlined"
-					headingButtonIcon={<RocketIcon marginRight={10} />}
-				></Section>
-			</Container>
+			<HeroSection />
+			<TrendingCollectionSection />
+			<TopRatedArtistsSection />
+			<BrowseCategoriesSection />
+			<DiscoverMoreNFTSection />
+			{/* <NFTHighlightSection /> */}
+			<HowItWorksSection />
+			{/* <SubscribeSection /> */}
 		</>
 	);
 };

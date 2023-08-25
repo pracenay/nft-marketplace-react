@@ -2,12 +2,12 @@ import {
 	StyledSection,
 	StyledSectionHeading,
 	StyledSectionContent,
+	SectionTitle,
+	SectionSubtitle,
 	ButtonFlexContent,
 } from './Section.styled';
 
-import Typography from 'src/components/Typography/Typography';
 import Button from 'src/components/Button/Button';
-import RocketIcon from 'src/components/Icons/RocketIcon/RocketIcon';
 
 const Section = ({
 	children,
@@ -20,22 +20,22 @@ const Section = ({
 }) => {
 	return (
 		<StyledSection>
-			<StyledSectionHeading>
-				<div>
-					<Typography tag="h3" marginBottom={10} fontWeight={600}>
-						{headingTitle}
-					</Typography>
-					<Typography tag="p">{headingSubtitle}</Typography>
-				</div>
-				{isButtonVisible && (
-					<Button size="medium" variant={headingButtonVariant}>
-						<ButtonFlexContent>
-							{headingButtonIcon}
-							{headingButtonText}
-						</ButtonFlexContent>
-					</Button>
-				)}
-			</StyledSectionHeading>
+			{(headingSubtitle || headingSubtitle) && (
+				<StyledSectionHeading>
+					<div>
+						{headingTitle && <SectionTitle>{headingTitle}</SectionTitle>}
+						{headingSubtitle && <SectionSubtitle>{headingSubtitle}</SectionSubtitle>}
+					</div>
+					{isButtonVisible && (
+						<Button size="medium" variant={headingButtonVariant}>
+							<ButtonFlexContent>
+								{headingButtonIcon}
+								{headingButtonText}
+							</ButtonFlexContent>
+						</Button>
+					)}
+				</StyledSectionHeading>
+			)}
 			<StyledSectionContent>{children}</StyledSectionContent>
 		</StyledSection>
 	);

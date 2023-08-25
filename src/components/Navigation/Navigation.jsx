@@ -1,4 +1,3 @@
-import Logo from './Logo/Logo';
 import Link from './Link/Link';
 import AuthButton from './AuthButton/AuthButton';
 
@@ -7,10 +6,13 @@ import {
 	NavigationRow,
 	NavigationLogo,
 	NavigationLinks,
+	LogoWrapper,
 } from './Navigation.styled';
 
 import { useMediaQuery } from '@uidotdev/usehooks';
 import ToggleButton from './ToggleButton/ToggleButton';
+
+import LogoIcon from 'src/components/Icons/LogoIcon/LogoIcon';
 
 const links = [
 	{
@@ -33,7 +35,9 @@ const Navigation = () => {
 		<NavigationWrapper>
 			<NavigationRow>
 				<NavigationLogo>
-					<Logo />
+					<LogoWrapper>
+						<LogoIcon width={!isTablet ? 243 : 183} height={!isTablet ? 32 : 24} />
+					</LogoWrapper>
 				</NavigationLogo>
 				{!isTablet && (
 					<NavigationLinks>

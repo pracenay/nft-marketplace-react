@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
 	width: 100%;
-	max-width: 1046px;
+	max-width: 1116px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 30px;
+
+	@media screen and (max-width: 991px) {
+		max-width: 750px;
+	}
 `;

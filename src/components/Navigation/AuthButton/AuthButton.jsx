@@ -2,14 +2,7 @@ import Button from '../../Button/Button';
 import { ButtonContent } from './AuthButton.styled';
 const AuthButton = () => {
 	return (
-		<Button
-			variant="primary"
-			size="medium"
-			style={{
-				padding: '0 30px',
-				flexShrink: 0,
-			}}
-		>
+		<Button variant="primary" size="medium" padding="0 30px" flexShrink={0}>
 			<ButtonContent>
 				<svg
 					width="20"
