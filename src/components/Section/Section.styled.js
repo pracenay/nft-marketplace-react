@@ -17,6 +17,9 @@ export const StyledSectionHeading = styled.div`
 		justify-content: space-between;
 		align-items: flex-end;
 		margin-bottom: 60px;
+		@media screen and (max-width: 991px) {
+			margin-bottom: 40px;
+		}
 	}
 `;
 
