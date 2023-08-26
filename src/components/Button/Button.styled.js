@@ -32,7 +32,7 @@ export const StyledButton = styled.button`
 		${(props) =>
 			props.variant === 'outlined' &&
 			css`
-				border: 1px solid var(--color-cta);
+				border: 2px solid var(--color-cta);
 				color: var(--color-text);
 				background-color: transparent;
 			`}

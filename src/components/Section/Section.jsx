@@ -9,6 +9,8 @@ import {
 
 import Button from 'src/components/Button/Button';
 
+import { useMediaQuery } from '@uidotdev/usehooks';
+
 const Section = ({
 	children,
 	headingTitle,
@@ -18,6 +20,7 @@ const Section = ({
 	headingButtonVariant,
 	headingButtonIcon,
 }) => {
+	const isMobile = useMediaQuery('only screen and (max-width : 576px)');
 	return (
 		<StyledSection>
 			{(headingSubtitle || headingSubtitle) && (
@@ -26,7 +29,7 @@ const Section = ({
 						{headingTitle && <SectionTitle>{headingTitle}</SectionTitle>}
 						{headingSubtitle && <SectionSubtitle>{headingSubtitle}</SectionSubtitle>}
 					</div>
-					{isButtonVisible && (
+					{!isMobile && isButtonVisible && (
 						<Button size="medium" variant={headingButtonVariant}>
 							<ButtonFlexContent>
 								{headingButtonIcon}
