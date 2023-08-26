@@ -23,7 +23,7 @@ const Section = ({
 	const isMobile = useMediaQuery('only screen and (max-width : 576px)');
 	return (
 		<StyledSection>
-			{(headingSubtitle || headingSubtitle) && (
+			{(headingTitle || headingSubtitle) && (
 				<StyledSectionHeading>
 					<div>
 						{headingTitle && <SectionTitle>{headingTitle}</SectionTitle>}
