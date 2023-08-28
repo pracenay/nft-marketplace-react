@@ -36,6 +36,12 @@ export const StyledButton = styled.button`
 				color: var(--color-text);
 				background-color: transparent;
 			`}
+		${(props) =>
+			props.variant === 'secondary' &&
+			css`
+				color: var(--color-bg-primary);
+				background-color: var(--color-text);
+			`}
         ${(props) =>
 			props.size === 'large' &&
 			css`

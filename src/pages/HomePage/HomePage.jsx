@@ -15,7 +15,7 @@ const HomePage = () => {
 			<TopRatedArtistsSection />
 			<BrowseCategoriesSection />
 			<DiscoverMoreNFTSection />
-			{/* <NFTHighlightSection /> */}
+			<NFTHighlightSection />
 			<HowItWorksSection />
 			{/* <SubscribeSection /> */}
 		</>
