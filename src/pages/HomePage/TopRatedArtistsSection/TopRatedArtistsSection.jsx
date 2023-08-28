@@ -80,7 +80,7 @@ const TopRatedArtistsSection = () => {
 		} else {
 			setData(artistsData);
 		}
-	});
+	}, [isTablet, isMobile]);
 
 	return (
 		<Container>

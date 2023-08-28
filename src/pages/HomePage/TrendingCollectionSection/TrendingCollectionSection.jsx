@@ -85,7 +85,7 @@ const TrendingCollectionSection = () => {
 		} else {
 			setData(collectionCardsData);
 		}
-	});
+	}, [isTablet, isMobile]);
 	return (
 		<Container>
 			<Section
