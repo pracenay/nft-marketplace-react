@@ -11,12 +11,16 @@ export const CategoryCardThumb = styled.div`
 	width: 100%;
 	height: 240px;
 	overflow: hidden;
-	color: pink;
+
+	@media screen and (max-width: 991px) {
+		height: 142px;
+	}
 `;
 
 export const CategoryCardThumbImage = styled.div`
 	width: 100%;
 	height: 100%;
+
 	background-image: url(${({ backgroundImage }) => backgroundImage});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -32,10 +36,20 @@ export const CategoryCardThumbIcon = styled.div`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	@media screen and (max-width: 991px) {
+		svg {
+			width: 80px;
+			height: 80px;
+		}
+	}
 `;
 
 export const CategoryCardBody = styled.div`
 	padding: 20px 30px 25px;
+	@media screen and (max-width: 991px) {
+		padding: 20px 20px 25px;
+	}
 `;
 
 export const CategoryCardTitle = styled.div`
@@ -43,6 +57,10 @@ export const CategoryCardTitle = styled.div`
 	font-weight: 600;
 	line-height: 140%; /* 30.8px */
 	text-transform: capitalize;
+
+	@media screen and (max-width: 991px) {
+		font-size: 16px;
+	}
 `;
 
 export const CategoryCardWrapper = styled.div`
