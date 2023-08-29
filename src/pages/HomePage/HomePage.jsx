@@ -17,7 +17,7 @@ const HomePage = () => {
 			<DiscoverMoreNFTSection />
 			<NFTHighlightSection />
 			<HowItWorksSection />
-			{/* <SubscribeSection /> */}
+			<SubscribeSection />
 		</>
 	);
 };

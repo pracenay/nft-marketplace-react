@@ -7,7 +7,7 @@ import NFTPage from './pages/NFTPage/NFTPage';
 import MarketplacePage from './pages/MarketplacePage/MarketplacePage';
 import RankingsPage from './pages/RankingsPage/RankingsPage';
 import Navigation from './components/Navigation/Navigation';
-
+import Footer from 'src/components/Footer/Footer';
 function App() {
 	return (
 		<>
@@ -20,6 +20,7 @@ function App() {
 				<Route path="/marketplace" element={<MarketplacePage />} />
 				<Route path="/rankings" element={<RankingsPage />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }
