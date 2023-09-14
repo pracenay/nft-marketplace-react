@@ -15,7 +15,6 @@ import Input from 'src/components/Input/Input';
 import SubscribeImage from 'src/assets/images/SubscribeImage.png';
 
 import MailIcon from 'src/components/Icons/MailIcon/MailIcon';
-import { ButtonFlexContent } from 'src/pages/common';
 
 const SubscribeSection = () => {
 	return (
@@ -36,10 +35,8 @@ const SubscribeSection = () => {
 							<SubscribeInput>
 								<Input>
 									<Button variant="primary" flexShrink={0}>
-										<ButtonFlexContent>
-											<MailIcon width={20} height={20} marginRight={10} />
-											Subscribe
-										</ButtonFlexContent>
+										<MailIcon width={20} height={20} />
+										Subscribe
 									</Button>
 								</Input>
 							</SubscribeInput>

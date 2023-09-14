@@ -21,6 +21,11 @@ export const StyledButton = styled.button`
 	vertical-align: middle;
 
 	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
 	${(props) =>
 		props.variant === 'primary' &&
 		css`

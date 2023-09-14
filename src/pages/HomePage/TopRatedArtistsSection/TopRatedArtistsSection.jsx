@@ -90,7 +90,7 @@ const TopRatedArtistsSection = () => {
 				isButtonVisible={true}
 				headingButtonText="View Rankings"
 				headingButtonVariant="outlined"
-				headingButtonIcon={<RocketIcon marginRight={10} />}
+				headingButtonIcon={<RocketIcon />}
 			>
 				<TopArtistsWrapper>
 					{data.map((item, index) => (
@@ -100,10 +100,8 @@ const TopRatedArtistsSection = () => {
 				{isMobile && (
 					<ButtonMobileWrapper>
 						<Button size="medium" variant="outlined" marginTop={isMobile && '40px'}>
-							<ButtonFlexContent>
-								<RocketIcon marginRight={10} />
-								View Rankings
-							</ButtonFlexContent>
+							<RocketIcon />
+							View Rankings
 						</Button>
 					</ButtonMobileWrapper>
 				)}

@@ -8,19 +8,22 @@ import MarketplacePage from './pages/MarketplacePage/MarketplacePage';
 import RankingsPage from './pages/RankingsPage/RankingsPage';
 import Navigation from './components/Navigation/Navigation';
 import Footer from 'src/components/Footer/Footer';
+import { Content } from './styled';
 function App() {
 	return (
 		<>
-			<Navigation />
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/create-account" element={<CreateAccountPage />} />
-				<Route path="/artist/:artistId" element={<ArtistPage />} />
-				<Route path="/nft/:nftId" element={<NFTPage />} />
-				<Route path="/marketplace" element={<MarketplacePage />} />
-				<Route path="/rankings" element={<RankingsPage />} />
-			</Routes>
-			<Footer />
+			<Content>
+				<Navigation />
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/create-account" element={<CreateAccountPage />} />
+					<Route path="/artist/:artistId" element={<ArtistPage />} />
+					<Route path="/nft/:nftId" element={<NFTPage />} />
+					<Route path="/marketplace" element={<MarketplacePage />} />
+					<Route path="/rankings" element={<RankingsPage />} />
+				</Routes>
+				<Footer />
+			</Content>
 		</>
 	);
 }

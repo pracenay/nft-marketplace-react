@@ -12,4 +12,5 @@ export const ButtonFlexContent = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 12px;
 `;

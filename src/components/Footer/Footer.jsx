@@ -21,8 +21,6 @@ import {
 	FooterCopyrightText,
 } from './Footer.styled';
 
-import { ButtonFlexContent } from 'src/components/common';
-
 import LogoIcon from 'src/components/Icons/LogoIcon/LogoIcon';
 import MailIcon from 'src/components/Icons/MailIcon/MailIcon';
 import Container from 'src/components/Container/Container';
@@ -103,10 +101,8 @@ const Footer = () => {
 
 						<Input>
 							<Button variant="primary" flexShrink={0}>
-								<ButtonFlexContent>
-									<MailIcon width={20} height={20} marginRight={10} />
-									Subscribe
-								</ButtonFlexContent>
+								<MailIcon width={20} height={20} />
+								Subscribe
 							</Button>
 						</Input>
 					</FooterSubscribe>

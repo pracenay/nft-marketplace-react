@@ -4,7 +4,6 @@ import {
 	StyledSectionContent,
 	SectionTitle,
 	SectionSubtitle,
-	ButtonFlexContent,
 } from './Section.styled';
 
 import Button from 'src/components/Button/Button';
@@ -31,10 +30,8 @@ const Section = ({
 					</div>
 					{!isMobile && isButtonVisible && (
 						<Button size="medium" variant={headingButtonVariant}>
-							<ButtonFlexContent>
-								{headingButtonIcon}
-								{headingButtonText}
-							</ButtonFlexContent>
+							{headingButtonIcon}
+							{headingButtonText}
 						</Button>
 					)}
 				</StyledSectionHeading>

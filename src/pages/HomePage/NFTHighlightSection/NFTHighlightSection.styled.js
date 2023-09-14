@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-// NFTHighlightWrapper, NFTHighlightContent, NFTHighlightInfo, Badge, BadgeImage, BadgeText, NFTHighlightInfoTitle, NFTHighlightInfoButton, NFTHighlightTimer
-
 export const NFTHighlightWrapper = styled.div`
 	display: flex;
 	align-items: flex-end;

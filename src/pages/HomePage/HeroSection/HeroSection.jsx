@@ -8,16 +8,15 @@ import {
 	HeroColumn,
 	HeroTitle,
 	HeroSubtitle,
-	StatsRow,
-	StatsItem,
-	StatsItemCount,
-	StatsItemTitle,
 	HeroButton,
 	HeroButtonContent,
 } from './HeroSection.styled';
 
 import RocketIcon from 'src/components/Icons/RocketIcon/RocketIcon';
+import Statistic from 'src/components/Statistic/Statistic';
 import { useMediaQuery } from '@uidotdev/usehooks';
+
+import { artistStatisticData } from 'src/constants';
 
 const HeroSection = () => {
 	const isMobile = useMediaQuery('only screen and (max-width : 576px)');
@@ -46,20 +45,7 @@ const HeroSection = () => {
 							</Button>
 						</HeroButton>
 
-						<StatsRow>
-							<StatsItem>
-								<StatsItemCount>240k+</StatsItemCount>
-								<StatsItemTitle>Total Sale</StatsItemTitle>
-							</StatsItem>
-							<StatsItem>
-								<StatsItemCount>100k+</StatsItemCount>
-								<StatsItemTitle>Auctions</StatsItemTitle>
-							</StatsItem>
-							<StatsItem>
-								<StatsItemCount>240k+</StatsItemCount>
-								<StatsItemTitle>Artists</StatsItemTitle>
-							</StatsItem>
-						</StatsRow>
+						<Statistic data={artistStatisticData} countFontSize={28} labelFontSize={24} />
 					</HeroColumn>
 					{!isMobile && (
 						<HeroColumn>

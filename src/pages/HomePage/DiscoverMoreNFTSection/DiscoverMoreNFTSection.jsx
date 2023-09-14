@@ -14,7 +14,7 @@ import NFTCardImage2 from 'src/assets/images/NFTCardImage2.png';
 import NFTCardImage3 from 'src/assets/images/NFTCardImage3.png';
 
 import { DiscoverNFTsWrapper } from './DiscoverMoreNFTSection.styled';
-import { ButtonFlexContent, ButtonMobileWrapper } from '../../common';
+import { ButtonMobileWrapper } from '../../common';
 
 import { useMediaQuery } from '@uidotdev/usehooks';
 
@@ -79,7 +79,7 @@ const DiscoverMoreNFTSection = () => {
 				isButtonVisible={true}
 				headingButtonText="See All"
 				headingButtonVariant="outlined"
-				headingButtonIcon={<EyeIcon marginRight={10} />}
+				headingButtonIcon={<EyeIcon />}
 			>
 				<DiscoverNFTsWrapper>
 					{data.map((item) => (
@@ -90,10 +90,8 @@ const DiscoverMoreNFTSection = () => {
 				{isMobile && (
 					<ButtonMobileWrapper>
 						<Button size="medium" variant="outlined" marginTop={isMobile && '40px'}>
-							<ButtonFlexContent>
-								<EyeIcon marginRight={10} />
-								See All
-							</ButtonFlexContent>
+							<EyeIcon />
+							See All
 						</Button>
 					</ButtonMobileWrapper>
 				)}

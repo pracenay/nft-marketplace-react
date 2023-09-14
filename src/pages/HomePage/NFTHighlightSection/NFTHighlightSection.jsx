@@ -7,7 +7,7 @@ import EyeIcon from 'src/components/Icons/EyeIcon/EyeIcon';
 import Avatar4 from 'src/assets/images/avatars/Avatar4.png';
 
 import NFTHighlightBg from 'src/assets/images/NFTHighlight.png';
-import { ButtonFlexContent, ButtonMobileWrapper } from '../../common';
+import { ButtonMobileWrapper } from '../../common';
 
 import {
 	NFTHighlightWrapper,
@@ -94,10 +94,8 @@ const NFTHighlightSection = () => {
 						{!isMobile && (
 							<NFTHighlightInfoButton>
 								<Button size="medium" variant="secondary" marginTop={isMobile && '40px'}>
-									<ButtonFlexContent>
-										<EyeIcon marginRight={10} />
-										See NFT
-									</ButtonFlexContent>
+									<EyeIcon />
+									See NFT
 								</Button>
 							</NFTHighlightInfoButton>
 						)}
@@ -136,10 +134,8 @@ const NFTHighlightSection = () => {
 					{isMobile && (
 						<ButtonMobileWrapper>
 							<Button size="medium" variant="secondary" marginTop={isMobile && '30px'}>
-								<ButtonFlexContent>
-									<EyeIcon marginRight={10} />
-									See NFT
-								</ButtonFlexContent>
+								<EyeIcon />
+								See NFT
 							</Button>
 						</ButtonMobileWrapper>
 					)}
